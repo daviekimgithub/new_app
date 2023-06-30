@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homepage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get All Games Updates"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/homepage_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image0"
+                        />
+                    <TextView
+                        android:id="@+id/item_play0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image0"
+                        />
+
+                    <ImageView
+                        android:id="@+id/item_image0"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/item_review_summary0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title0"
+                        app:layout_constraintStart_toEndOf="@id/item_image0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image0"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_price0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary0"
+                        app:layout_constraintStart_toEndOf="@id/item_image0"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_date0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image1" />
+
+                    <TextView
+                        android:id="@+id/item_play1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image1" />
+
+                    <ImageView
+                        android:id="@+id/item_image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title1"
+                        app:layout_constraintStart_toEndOf="@id/item_image1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image1" />
+
+                    <TextView
+                        android:id="@+id/item_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary1"
+                        app:layout_constraintStart_toEndOf="@id/item_image1" />
+
+                    <TextView
+                        android:id="@+id/item_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary1"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image2" />
+
+                    <TextView
+                        android:id="@+id/item_play2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image2" />
+
+                    <ImageView
+                        android:id="@+id/item_image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title2"
+                        app:layout_constraintStart_toEndOf="@id/item_image2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image2" />
+
+                    <TextView
+                        android:id="@+id/item_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary2"
+                        app:layout_constraintStart_toEndOf="@id/item_image2" />
+
+                    <TextView
+                        android:id="@+id/item_date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary2"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image3" />
+
+                    <TextView
+                        android:id="@+id/item_play3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image3" />
+
+                    <ImageView
+                        android:id="@+id/item_image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title3"
+                        app:layout_constraintStart_toEndOf="@id/item_image3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image3" />
+
+                    <TextView
+                        android:id="@+id/item_price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary3"
+                        app:layout_constraintStart_toEndOf="@id/item_image3" />
+
+                    <TextView
+                        android:id="@+id/item_date3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary3"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image4" />
+
+                    <TextView
+                        android:id="@+id/item_play4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image4" />
+
+                    <ImageView
+                        android:id="@+id/item_image4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title4"
+                        app:layout_constraintStart_toEndOf="@id/item_image4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image4" />
+
+                    <TextView
+                        android:id="@+id/item_price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary4"
+                        app:layout_constraintStart_toEndOf="@id/item_image4" />
+
+                    <TextView
+                        android:id="@+id/item_date4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary4"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image5" />
+
+                    <TextView
+                        android:id="@+id/item_play5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image5" />
+
+                    <ImageView
+                        android:id="@+id/item_image5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title5"
+                        app:layout_constraintStart_toEndOf="@id/item_image5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image5" />
+
+                    <TextView
+                        android:id="@+id/item_price5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary5"
+                        app:layout_constraintStart_toEndOf="@id/item_image5" />
+
+                    <TextView
+                        android:id="@+id/item_date5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary5"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image6" />
+
+                    <TextView
+                        android:id="@+id/item_play6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image6" />
+
+                    <ImageView
+                        android:id="@+id/item_image6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title6"
+                        app:layout_constraintStart_toEndOf="@id/item_image6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image6" />
+
+                    <TextView
+                        android:id="@+id/item_price6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary6"
+                        app:layout_constraintStart_toEndOf="@id/item_image6" />
+
+                    <TextView
+                        android:id="@+id/item_date6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary6"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image7" />
+
+                    <TextView
+                        android:id="@+id/item_play7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image7" />
+
+                    <ImageView
+                        android:id="@+id/item_image7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title7"
+                        app:layout_constraintStart_toEndOf="@id/item_image7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image7" />
+
+                    <TextView
+                        android:id="@+id/item_price7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary7"
+                        app:layout_constraintStart_toEndOf="@id/item_image7" />
+
+                    <TextView
+                        android:id="@+id/item_date7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary7"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image8" />
+
+                    <TextView
+                        android:id="@+id/item_play8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image8" />
+
+                    <ImageView
+                        android:id="@+id/item_image8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title8"
+                        app:layout_constraintStart_toEndOf="@id/item_image8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image8" />
+
+                    <TextView
+                        android:id="@+id/item_price8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary8"
+                        app:layout_constraintStart_toEndOf="@id/item_image8" />
+
+                    <TextView
+                        android:id="@+id/item_date8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary8"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/item_title9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Best Games"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image9" />
+
+                    <TextView
+                        android:id="@+id/item_play9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBaseline_toTopOf="@id/item_image9" />
+
+                    <ImageView
+                        android:id="@+id/item_image9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_image_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/item_image9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_review_summary9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Positive 88% of the 7,342,432 user reviews for this game are positive."
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="50dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_title9"
+                        app:layout_constraintStart_toEndOf="@id/item_image9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/item_image9" />
+
+                    <TextView
+                        android:id="@+id/item_price9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,19€0,81€"
+                        android:drawableLeft="@drawable/ic_money"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary9"
+                        app:layout_constraintStart_toEndOf="@id/item_image9" />
+
+                    <TextView
+                        android:id="@+id/item_date9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov, 2000"
+                        android:drawableLeft="@drawable/ic_calender"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/item_review_summary9"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/games_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/app_item"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
